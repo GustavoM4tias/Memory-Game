@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+    <div id="initial-screen">
+        <h1>Jogo da Memória</h1>
+        <img class="start" src="image/start.png" alt="Iniciar" onclick="startGame()">
+    </div>
+
+    <div id="game-screen" class="hidden">
+        <div class="memory-game">
+            <!-- As cartas ficam aqui -->
+        </div>
+        <div id="game-messages" class="hidden">
+            <p id="result-message"></p>
+            <img class="restart" src="image/restart.png" alt="Reiniciar" onclick="restartGame()"></img>
+            <img class="lobby" src="image/lobby.png" alt="Voltar" onclick="backToMenu()">
+        </img>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
